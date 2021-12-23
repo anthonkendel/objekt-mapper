@@ -14,6 +14,10 @@
   },
   "license": "MIT",
   "author": "Anthon <anthon.kendel@gmail.com>",
+  "files": [
+    "/build",
+    "/src"
+  ],
   "main": "build/index.js",
   "browser": "build/index.js",
   "types": "build/index.d.ts",
