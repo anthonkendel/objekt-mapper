@@ -11,13 +11,18 @@
     "build": "esbuild src/index.ts --bundle --outfile=build/index.js",
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write .",
-    "test": "npm run prettier:check"
+    "test:unit": "jest",
+    "test:unit-watch": "jest --watch",
+    "test": "npm run prettier:check && npm run test:unit"
   },
   "author": "Anthon <anthon.kendel@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^27.0.3",
     "esbuild": "0.14.7",
+    "jest": "27.4.5",
     "prettier": "2.5.1",
+    "ts-jest": "^27.1.2",
     "typescript": "4.5.4"
   }
 }

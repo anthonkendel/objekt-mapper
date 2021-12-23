@@ -7,7 +7,7 @@ export class SimpleMapper {
   map<Source, Target>(key: string, source: Source): Target {
     const mapping = this.maps[key];
 
-    if (!mapping) throw new Error(`${key} mapping not found!`);
+    if (!mapping) throw new Error(`${key} map not found!`);
 
     const _source = source as Record<string, unknown>;
 
