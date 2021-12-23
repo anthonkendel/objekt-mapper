@@ -1,15 +1,15 @@
-import { SimpleMapper } from "./SimpleMapper";
+import { SimpleMapper } from "./types/SimpleMapper";
 import { User } from "./User";
 import { UserDTO } from "./UserDTO";
 
 const mapper = new SimpleMapper();
 
-mapper.createMapping<User, UserDTO>("user-to-userDTO", {
-  firstName: "firstName",
-  lastName: "lastName",
+mapper.createMap<User, UserDTO>("user-to-userDTO", {
+  firstName: null,
+  lastName: undefined,
   fullName: (s) => `${s.firstName} ${s.lastName}`,
 });
-mapper.createMapping<UserDTO, User>("userDTO-to-user", {
+mapper.createMap<UserDTO, User>("userDTO-to-user", {
   firstName: "firstName",
   lastName: "lastName",
 });
