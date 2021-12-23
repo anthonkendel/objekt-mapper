@@ -1,4 +1,6 @@
 import { SimpleMapper } from "./types/SimpleMapper";
 
-export * from "./types/index";
+export * from "./functions";
+export * from "./types";
+
 export default SimpleMapper;

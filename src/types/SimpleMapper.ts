@@ -1,6 +1,13 @@
-import { isFunction, isDefined, isString } from "../functions/index";
+import { isDefined, isFunction, isString } from "../functions";
 import { SourceTargetMap } from "./SourceTargetMap";
 
+/**
+ * @class SimpleMapper
+ *
+ * Supports mapping to and from source and target objects.
+ *
+ * Each instance will keep track of its mappings but will not care about another instances.
+ */
 export class SimpleMapper {
   private readonly maps: Record<string, SourceTargetMap> = {};
 
@@ -31,9 +38,9 @@ export class SimpleMapper {
   }
 
   createMap<Source, Target>(
-    mappingKey: string,
+    key: string,
     mapping: SourceTargetMap<Source, Target>
   ) {
-    this.maps[mappingKey] = mapping;
+    this.maps[key] = mapping;
   }
 }
