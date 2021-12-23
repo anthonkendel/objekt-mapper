@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "name": "Simple Mapper"
+    }
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "prettier.enable": true,
+    "typescript.format.enable": true,
+  }
+}
