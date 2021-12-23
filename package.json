@@ -1,27 +1,41 @@
 {
   "name": "simple-mapper",
-  "private": true,
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "Simple mapper supports mapping source and target objects.",
+  "keywords": [
+    "automapper",
+    "mapper",
+    "object",
+    "typescript"
+  ],
+  "homepage": "https://github.com/anthonkendel/simple-mapper#readme",
+  "bugs": {
+    "url": "https://github.com/anthonkendel/simple-mapper/issues"
+  },
+  "license": "MIT",
+  "author": "Anthon <anthon.kendel@gmail.com>",
+  "main": "build/index.js",
+  "browser": "build/index.js",
+  "types": "build/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/anthonkendel/simple-mapper.git"
   },
   "scripts": {
     "build:watch": "npm run build -- --watch",
-    "build": "esbuild src/index.ts --bundle --outfile=build/index.js",
+    "build": "npm run clean && tsc",
+    "clean": "rimraf build",
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write .",
-    "test:unit": "jest",
     "test:unit-watch": "jest --watch",
+    "test:unit": "jest",
     "test": "npm run prettier:check && npm run test:unit"
   },
-  "author": "Anthon <anthon.kendel@gmail.com>",
-  "license": "MIT",
   "devDependencies": {
-    "@types/jest": "^27.0.3",
-    "esbuild": "0.14.7",
+    "@types/jest": "27.0.3",
     "jest": "27.4.5",
     "prettier": "2.5.1",
+    "rimraf": "3.0.2",
     "ts-jest": "^27.1.2",
     "typescript": "4.5.4"
   }

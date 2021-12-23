@@ -1,8 +1,8 @@
 # Simple Mapper
 
-A library that supports mapping between source and target objects. The aim is to provide a library with a simple API without missing crucial features.
+Simple mapper supports mapping source and target objects. The aim is to provide a simple API without missing crucial features.
 
-The start of the library is the `SimpleMapper` class. Each instance of the class will track its own mappings.
+Inspired by [AutoMapper](https://github.com/AutoMapper/AutoMapper) and [AutoMapper TypeScript](https://github.com/nartc/mapper).
 
 ## Install
 
