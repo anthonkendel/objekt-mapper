@@ -12,13 +12,25 @@ TODO: Add install command when ready to be published.
 
 ## API
 
-### Create new mapper instance (`new SimpleMapper()`)
+### Create new mapper instance
+
+```typescript
+new SimpleMapper();
+```
+
+#### Example
 
 ```typescript
 const mapper = new SimpleMapper();
 ```
 
-### Create a new map between source and target types (`mapper.createMap<Target, Source>(key, map)`)
+### Create a new map between source and target
+
+```typescript
+mapper.createMap<Target, Source>(key, map);
+```
+
+#### Example
 
 ```typescript
 interface User {
@@ -62,9 +74,15 @@ mapper.createMap<Contact, ContactDTO>("ContactToContactDTO", {
 });
 ```
 
-As seen in the example above when using `null` or `undefined` on the source type properties the properties will automatically be mapped to the same property name.
+As seen in the example above when using `null` or `undefined` then the properties will automatically be mapped on the same property name.
 
-### Map source object to a target object (`mapper.map<Source, Target>(key, source)`)
+### Map source object to a target object
+
+```typescript
+mapper.map<Source, Target>(key, source);
+```
+
+#### Example
 
 ```typescript
 const user: User = {
