@@ -1,5 +1,7 @@
 # Objekt Mapper
 
+![npm](https://img.shields.io/npm/v/objekt-mapper)
+
 Objekt mapper supports mapping source and target objects. The aim is to provide a simple API without missing crucial features.
 
 Inspired by [AutoMapper](https://github.com/AutoMapper/AutoMapper).
@@ -31,7 +33,7 @@ const mapper = new ObjektMapper();
 ### Create a new map between source and target
 
 ```typescript
-mapper.createMap<Target, Source>(key, map);
+mapper.createMap<Source, Target>(key, map);
 ```
 
 #### Example
