@@ -1,6 +1,6 @@
 {
   "name": "objekt-mapper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Objekt mapper supports mapping source and target objects.",
   "keywords": [
     "automapper",
