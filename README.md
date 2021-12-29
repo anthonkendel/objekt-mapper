@@ -1,6 +1,6 @@
 # Objekt Mapper
 
-![npm](https://img.shields.io/npm/v/objekt-mapper)
+[![npm](https://img.shields.io/npm/v/objekt-mapper)](https://www.npmjs.com/package/objekt-mapper)
 
 Objekt mapper supports mapping source and target objects. The aim is to provide a simple API without missing crucial features.
 
