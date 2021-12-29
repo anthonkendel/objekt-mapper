@@ -2,12 +2,15 @@
   "folders": [
     {
       "path": ".",
-      "name": "Simple Mapper"
+      "name": "Objekt mapper"
     }
   ],
   "settings": {
     "editor.formatOnSave": true,
     "prettier.enable": true,
     "typescript.format.enable": true,
+    "cSpell.words": [
+      "Objekt"
+    ],
   }
 }

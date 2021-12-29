@@ -2,13 +2,13 @@ import { isDefined, isFunction, isString } from "../functions";
 import { SourceTargetMap } from "./SourceTargetMap";
 
 /**
- * @class SimpleMapper
+ * @class Mapper
  *
- * Supports mapping to and from source and target objects.
+ * Supports mapping to and from target and source objects.
  *
- * Each instance will keep track of its mappings but will not care about another instances.
+ * Each instance will keep track of its mappings and will not care about another instances.
  */
-export class SimpleMapper {
+export class ObjektMapper {
   private readonly maps: Record<string, SourceTargetMap> = {};
 
   map<Source, Target>(key: string, source: Source): Target {
@@ -22,8 +22,8 @@ export class SimpleMapper {
       const [key, functionOrKey] = current;
 
       if (isFunction(functionOrKey)) {
-        result[key] = functionOrKey(source);
-      } else if (isString(functionOrKey) && functionOrKey in source) {
+        result[key] = functionOrKey(_source);
+      } else if (isString(functionOrKey) && functionOrKey in _source) {
         result[key] = _source[functionOrKey];
       } else if (!isDefined(functionOrKey) && key in _source) {
         result[key] = _source[key];
@@ -44,3 +44,5 @@ export class SimpleMapper {
     this.maps[key] = mapping;
   }
 }
+
+export default ObjektMapper;

@@ -1,8 +1,8 @@
-# Simple Mapper
+# Objekt Mapper
 
-Simple mapper supports mapping source and target objects. The aim is to provide a simple API without missing crucial features.
+Objekt mapper supports mapping source and target objects. The aim is to provide a simple API without missing crucial features.
 
-Inspired by [AutoMapper](https://github.com/AutoMapper/AutoMapper) and [AutoMapper TypeScript](https://github.com/nartc/mapper).
+Inspired by [AutoMapper](https://github.com/AutoMapper/AutoMapper).
 
 ## Install
 
@@ -15,13 +15,17 @@ TODO: Add install command when ready to be published.
 ### Create new mapper instance
 
 ```typescript
-new SimpleMapper();
+import ObjektMapper from "objekt-mapper";
+
+new ObjektMapper();
 ```
 
 #### Example
 
 ```typescript
-const mapper = new SimpleMapper();
+import ObjektMapper from "objekt-mapper";
+
+const mapper = new ObjektMapper();
 ```
 
 ### Create a new map between source and target

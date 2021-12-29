@@ -1,4 +1,4 @@
-import { SimpleMapper } from "./SimpleMapper";
+import { ObjektMapper } from "./ObjektMapper";
 
 interface FullMetadata {
   created: Date;
@@ -20,8 +20,8 @@ interface BasicMetadata {
   ownerName: string;
 }
 
-const emptyMapper = new SimpleMapper();
-const mapper = new SimpleMapper();
+const emptyMapper = new ObjektMapper();
+const mapper = new ObjektMapper();
 
 const MapperKeys = {
   FullToBasicMetadata: "FullToBasicMetadata",

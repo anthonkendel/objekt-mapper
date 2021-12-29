@@ -1,16 +1,17 @@
 {
-  "name": "simple-mapper",
+  "name": "objekt-mapper",
   "version": "1.0.0",
-  "description": "Simple mapper supports mapping source and target objects.",
+  "description": "Objekt mapper supports mapping source and target objects.",
   "keywords": [
     "automapper",
     "mapper",
     "object",
-    "typescript"
+    "typescript",
+    "simple"
   ],
-  "homepage": "https://github.com/anthonkendel/simple-mapper#readme",
+  "homepage": "https://github.com/anthonkendel/objekt-mapper#readme",
   "bugs": {
-    "url": "https://github.com/anthonkendel/simple-mapper/issues"
+    "url": "https://github.com/anthonkendel/objekt-mapper/issues"
   },
   "license": "MIT",
   "author": "Anthon <anthon.kendel@gmail.com>",
@@ -23,7 +24,7 @@
   "types": "build/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/anthonkendel/simple-mapper.git"
+    "url": "https://github.com/anthonkendel/objekt-mapper.git"
   },
   "scripts": {
     "build:watch": "npm run build -- --watch",

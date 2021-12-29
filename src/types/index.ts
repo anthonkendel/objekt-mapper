@@ -1,2 +1,2 @@
-export * from "./SimpleMapper";
+export * from "./ObjektMapper";
 export * from "./SourceTargetMap";

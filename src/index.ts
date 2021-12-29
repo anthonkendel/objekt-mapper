@@ -1,6 +1,6 @@
-import { SimpleMapper } from "./types/SimpleMapper";
+import { ObjektMapper } from "./types/ObjektMapper";
 
 export * from "./functions";
 export * from "./types";
 
-export default SimpleMapper;
+export default ObjektMapper;
