@@ -7,7 +7,7 @@ Inspired by [AutoMapper](https://github.com/AutoMapper/AutoMapper).
 ## Install
 
 ```bash
-TODO: Add install command when ready to be published.
+npm install --save objekt-mapper
 ```
 
 ## API
